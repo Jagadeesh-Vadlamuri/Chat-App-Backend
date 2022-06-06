@@ -32,6 +32,9 @@ io.on("connection", (socket) => {
     });
   });
 
+  app.get('/', (req, res) => {
+    res.send('Welcome to the Chat Application with Socket.io')
+  })
 
 server.listen(PORT, () =>{
     console.log("Server Running on"+" "+PORT)
